@@ -11,7 +11,7 @@ module.exports = function createWriteStream(params) {
   writeStream.cleanup = function(cb) {
     writeStream.end();
     fs.unlink(path, function(err) {
-      if (err) writeStream.emit('error', err);
+      if (err && err.code !== 'ENOENT') writeStream.emit('error', err);
       if (cb) cb(err);
     });
   };
@@ -21,7 +21,7 @@ module.exports = function createWriteStream(params) {
     try {
       fs.unlinkSync(path);
     } catch (err) {
-      writeStream.emit('error', err);
+      if (err.code !== 'ENOENT') writeStream.emit('error', err);
     }
   };
 
