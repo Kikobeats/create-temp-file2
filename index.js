@@ -4,30 +4,26 @@ var tempfile = require('tempfile2');
 
 module.exports = function createWriteStream(params) {
   var path = tempfile(params);
-  var ws = fs.createWriteStream(path);
-  var close = function() {
-    ws.end();
-    fs.close(ws.fd);
-  };
+  var writeStream = fs.createWriteStream(path);
 
-  ws.path = path;
+  writeStream.path = path;
 
-  ws.cleanup = function(cb) {
-    close();
+  writeStream.cleanup = function(cb) {
+    writeStream.end();
     fs.unlink(path, function(err) {
-      if (err) ws.emit('error', err);
+      if (err) writeStream.emit('error', err);
       if (cb) cb(err);
     });
   };
 
-  ws.cleanupSync = function() {
-    close();
+  writeStream.cleanupSync = function() {
+    writeStream.end();
     try {
       fs.unlinkSync(path);
     } catch (err) {
-      ws.emit('error', err);
+      writeStream.emit('error', err);
     }
   };
 
-  return ws;
+  return writeStream;
 };
