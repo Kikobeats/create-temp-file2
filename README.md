@@ -1,6 +1,5 @@
 # create-temp-file2
 
-
 ![Last version](https://img.shields.io/github/tag/Kikobeats/create-temp-file2.svg?style=flat-square)
 [![Build Status](http://img.shields.io/travis/Kikobeats/create-temp-file2/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/create-temp-file2)
 [![Coverage Status](http://img.shields.io/coveralls/Kikobeats/create-temp-file2/master.svg?style=flat-square)](https://coveralls.io/r/Kikobeats/create-temp-file2?branch=master)
