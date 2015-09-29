@@ -1,5 +1,6 @@
 'use strict';
 
+var path = require('path')
 var test = require('tape')
 var fs = require('fs')
 var createTempFile = require('../')
@@ -34,7 +35,7 @@ test('write stream works', function(t) {
 test('extension', function(t) {
   t.plan(1)
   var ws = ctf('.txt')
-  t.notEqual(ws.path.indexOf('.txt'), -1, 'file extension is ".txt"')
+  t.equal(path.extname(ws.path), '.txt', 'file extension is ".txt"')
   ws.end('lolz')
   ws.cleanupSync()
   t.end()

@@ -18,8 +18,26 @@ npm install create-temp-file2 --save
 ## Usage
 
 ```js
-var createTempFile2 = require('create-temp-file2');
+var createTempFile = require('create-temp-file2');
+var temp = createTempFile({enoent: false}) // Prevent ENOENT error.
 ```
+
+## API
+
+### createTempFile({options})
+
+#### options.enoent
+
+Type: `boolean`
+Default: `true`
+
+Prevent emit an error under `ENOENT` error. This error appear when you call `.cleanup` or `.cleanupSync` more than once.
+
+The rest of the params provided will be passed to [tempFile2](https://github.com/Kikobeats/tempfile2).
+
+## License
+
+MIT © [Kiko Beats](http://www.kikobeats.com)
 
 ## License
 
