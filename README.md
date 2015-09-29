@@ -7,7 +7,7 @@
 [![NPM Status](http://img.shields.io/npm/dm/create-temp-file2.svg?style=flat-square)](https://www.npmjs.org/package/create-temp-file2)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/kikobeats)
 
-> Creates a temporary file, returns a write stream, a path, and cleanup functions
+> Creates a temporary file, returns a write stream, a path, and cleanup functions.
 
 ## Install
 
@@ -41,7 +41,7 @@ Alias to `fs.unlink` handling errors as stream.
 
 ### .cleanupSync
 
-sync version on `.cleanup`
+Sync version on `.cleanup`.
 
 ## License
 
