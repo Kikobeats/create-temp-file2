@@ -35,6 +35,14 @@ Prevent emit an error under `ENOENT` error. This error appear when you call `.cl
 
 The rest of the params provided will be passed to [tempFile2](https://github.com/Kikobeats/tempfile2).
 
+### .cleanup
+
+Alias to `fs.unlink` handling errors as stream.
+
+### .cleanupSync
+
+sync version on `.cleanup`
+
 ## License
 
 MIT © [Kiko Beats](http://www.kikobeats.com)
