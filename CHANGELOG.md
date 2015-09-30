@@ -1,10 +1,17 @@
+<a name="0.2.2"></a>
+## 0.2.2 (2015-09-30)
+
+
+
+
 <a name="0.2.1"></a>
 ## 0.2.1 (2015-09-29)
 
 
-* fixed tests and update documentation ([e31233f](https://github.com/kikobeats/create-temp-file2/commit/e31233f))
-* Update index.js ([a8b144a](https://github.com/kikobeats/create-temp-file2/commit/a8b144a))
+* 0.2.1 releases ([bd65113](https://github.com/kikobeats/create-temp-file2/commit/bd65113))
 * Update README.md ([c7e0871](https://github.com/kikobeats/create-temp-file2/commit/c7e0871))
+* Update index.js ([a8b144a](https://github.com/kikobeats/create-temp-file2/commit/a8b144a))
+* fixed tests and update documentation ([e31233f](https://github.com/kikobeats/create-temp-file2/commit/e31233f))
 * updated documentation ([08eb19e](https://github.com/kikobeats/create-temp-file2/commit/08eb19e))
 
 

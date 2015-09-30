@@ -2,11 +2,11 @@
   "name": "create-temp-file2",
   "description": "Creates a temporary file, returns a write stream, a path, and cleanup functions.",
   "homepage": "https://github.com/Kikobeats/create-temp-file2",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "./index.js",
   "author": {
-    "name": "Kiko Beats",
     "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
     "url": "https://github.com/Kikobeats"
   },
   "repository": "Kikobeats/create-temp-file2",
@@ -20,10 +20,10 @@
     "write"
   ],
   "dependencies": {
+    "existential-default": "~1.0.2",
     "tempfile2": "^1.0.0"
   },
   "devDependencies": {
-    "existential-default": "~1.0.2",
     "mocha": "*",
     "string.prototype.endswith": "^0.2.0",
     "string.prototype.startswith": "^0.2.0",
