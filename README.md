@@ -46,7 +46,3 @@ Sync version on `.cleanup`.
 ## License
 
 MIT © [Kiko Beats](http://www.kikobeats.com)
-
-## License
-
-MIT © [Kiko Beats](http://www.kikobeats.com)
