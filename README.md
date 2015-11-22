@@ -43,6 +43,10 @@ Alias to `fs.unlink` handling errors as stream.
 
 Sync version on `.cleanup`.
 
+## Related
+
+- [tempfile2](https://github.com/Kikobeats/tempfile2) – Get a random temp file path. much better.
+
 ## License
 
 MIT © [Kiko Beats](http://www.kikobeats.com)

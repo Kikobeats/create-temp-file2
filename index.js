@@ -10,8 +10,12 @@ var streamErrorHandler = function(opts, stream, err) {
 
 module.exports = function createWriteStream(params) {
   var path = tempfile(params);
-  if (typeof params !== 'object') params = {};
-  params.enoent = existsDefault(params.enoent, true);
+
+  if (typeof params !== 'object')
+    params = { enoent: true };
+  else
+    params.enoent = existsDefault(params.enoent, true);
+
   var writeStream = fs.createWriteStream(path);
   writeStream.path = path;
 
