@@ -1,5 +1,5 @@
 'use strict';
-var fs       = require('fs');
+var fs = require('fs');
 var tempfile = require('tempfile2');
 var existsDefault = require('existential-default');
 
