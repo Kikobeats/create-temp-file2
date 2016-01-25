@@ -20,7 +20,7 @@
     "write"
   ],
   "dependencies": {
-    "existential-default": "~1.0.2",
+    "existential-default": "~1.1.0",
     "tempfile2": "^1.0.0"
   },
   "devDependencies": {
