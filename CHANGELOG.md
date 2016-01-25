@@ -1,3 +1,15 @@
+<a name="1.0.1"></a>
+## 1.0.1 (2016-01-25)
+
+
+### chore
+
+* chore(package): update tempfile2 to version 1.0.5 ([64e89d2](https://github.com/kikobeats/create-temp-file2/commit/64e89d2))
+
+* Merge pull request #2 from Kikobeats/greenkeeper-tempfile2-1.0.5 ([804deb2](https://github.com/kikobeats/create-temp-file2/commit/804deb2))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2016-01-25)
 
@@ -9,6 +21,7 @@
 * add more keywords ([90f323c](https://github.com/kikobeats/create-temp-file2/commit/90f323c))
 * Little refactor ([91fc21b](https://github.com/kikobeats/create-temp-file2/commit/91fc21b))
 * Merge pull request #1 from Kikobeats/greenkeeper-update-all ([b8e75f5](https://github.com/kikobeats/create-temp-file2/commit/b8e75f5))
+* Release 1.0.0 ([3fc2603](https://github.com/kikobeats/create-temp-file2/commit/3fc2603))
 * Remove unnecessary dep ([4c4b176](https://github.com/kikobeats/create-temp-file2/commit/4c4b176))
 * update bumped scripts ([554e292](https://github.com/kikobeats/create-temp-file2/commit/554e292))
 * update deps ([68c792e](https://github.com/kikobeats/create-temp-file2/commit/68c792e))
