@@ -25,7 +25,6 @@
   },
   "devDependencies": {
     "git-dirty": "~1.0.1",
-    "mocha": "~2.3.4",
     "string.prototype.endswith": "~0.2.0",
     "string.prototype.startswith": "~0.2.0",
     "tape": "~4.0.0"
