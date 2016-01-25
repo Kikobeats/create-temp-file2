@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "existential-default": "~1.1.0",
-    "tempfile2": "~1.0.0"
+    "tempfile2": "~1.0.5"
   },
   "devDependencies": {
     "git-dirty": "~1.0.1",
