@@ -14,8 +14,10 @@
     "url": "https://github.com/Kikobeats/create-temp-file2/issues"
   },
   "keywords": [
+    "cleanup",
     "stream",
     "temp",
+    "tempfile",
     "tmp",
     "write"
   ],
