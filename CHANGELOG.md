@@ -1,8 +1,27 @@
+<a name="1.0.0"></a>
+# 1.0.0 (2016-01-25)
+
+
+### chore
+
+* chore(package): update dependencies ([236de5d](https://github.com/kikobeats/create-temp-file2/commit/236de5d))
+
+* add more keywords ([90f323c](https://github.com/kikobeats/create-temp-file2/commit/90f323c))
+* Little refactor ([91fc21b](https://github.com/kikobeats/create-temp-file2/commit/91fc21b))
+* Merge pull request #1 from Kikobeats/greenkeeper-update-all ([b8e75f5](https://github.com/kikobeats/create-temp-file2/commit/b8e75f5))
+* Remove unnecessary dep ([4c4b176](https://github.com/kikobeats/create-temp-file2/commit/4c4b176))
+* update bumped scripts ([554e292](https://github.com/kikobeats/create-temp-file2/commit/554e292))
+* update deps ([68c792e](https://github.com/kikobeats/create-temp-file2/commit/68c792e))
+* Use standard style ([be83a38](https://github.com/kikobeats/create-temp-file2/commit/be83a38))
+
+
+
 <a name="0.2.3"></a>
 ## 0.2.3 (2015-11-22)
 
 
 *  little improvement ([0d3ba37](https://github.com/kikobeats/create-temp-file2/commit/0d3ba37))
+* 0.2.3 release ([cbb50c2](https://github.com/kikobeats/create-temp-file2/commit/cbb50c2))
 * Update index.js ([56b0c73](https://github.com/kikobeats/create-temp-file2/commit/56b0c73))
 * Update README.md ([389ebb6](https://github.com/kikobeats/create-temp-file2/commit/389ebb6))
 * updated bumped settings ([f1c654b](https://github.com/kikobeats/create-temp-file2/commit/f1c654b))
