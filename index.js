@@ -16,7 +16,7 @@ module.exports = function createWriteStream (params) {
   if (typeof params !== 'object')
     params = paramsDefault
   else
-    params = existsDefault(params, 'paramsDefault')
+    params = existsDefault(params, paramsDefault)
 
   var writeStream = fs.createWriteStream(path)
   writeStream.path = path
