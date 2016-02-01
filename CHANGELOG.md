@@ -1,3 +1,16 @@
+<a name="1.0.2"></a>
+## 1.0.2 (2016-02-01)
+
+
+### chore
+
+* chore(package): update existential-default to version 1.1.1 ([ee75149](https://github.com/kikobeats/create-temp-file2/commit/ee75149))
+
+* Fix setup correctly defaultParams ([f06dbc8](https://github.com/kikobeats/create-temp-file2/commit/f06dbc8))
+* Merge pull request #3 from Kikobeats/greenkeeper-existential-default-1.1.1 ([9dfed63](https://github.com/kikobeats/create-temp-file2/commit/9dfed63))
+
+
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2016-01-25)
 
@@ -7,6 +20,7 @@
 * chore(package): update tempfile2 to version 1.0.5 ([64e89d2](https://github.com/kikobeats/create-temp-file2/commit/64e89d2))
 
 * Merge pull request #2 from Kikobeats/greenkeeper-tempfile2-1.0.5 ([804deb2](https://github.com/kikobeats/create-temp-file2/commit/804deb2))
+* Release 1.0.1 ([911ae84](https://github.com/kikobeats/create-temp-file2/commit/911ae84))
 
 
 
