@@ -1,3 +1,12 @@
+<a name="1.0.3"></a>
+## 1.0.3 (2016-02-02)
+
+
+* update deps ([6b8b3d9](https://github.com/kikobeats/create-temp-file2/commit/6b8b3d9))
+* update travis builds ([feb7028](https://github.com/kikobeats/create-temp-file2/commit/feb7028))
+
+
+
 <a name="1.0.2"></a>
 ## 1.0.2 (2016-02-01)
 
@@ -8,6 +17,7 @@
 
 * Fix setup correctly defaultParams ([f06dbc8](https://github.com/kikobeats/create-temp-file2/commit/f06dbc8))
 * Merge pull request #3 from Kikobeats/greenkeeper-existential-default-1.1.1 ([9dfed63](https://github.com/kikobeats/create-temp-file2/commit/9dfed63))
+* Release 1.0.2 ([c8b81ed](https://github.com/kikobeats/create-temp-file2/commit/c8b81ed))
 
 
 
