@@ -26,17 +26,16 @@
   ],
   "dependencies": {
     "existential-default": "~1.1.1",
-    "tempfile2": "~1.0.5"
+    "tempfile2": "~1.0.6"
   },
   "devDependencies": {
-    "git-dirty": "~1.0.1",
+    "git-dirty": "latest",
     "string.prototype.endswith": "~0.2.0",
     "string.prototype.startswith": "~0.2.0",
     "tape": "~4.0.0"
   },
   "engines": {
-    "node": ">= 0.10.0",
-    "npm": ">= 1.4.0"
+    "node": ">= 0.10.0"
   },
   "scripts": {
     "test": "tape test/*.js"
