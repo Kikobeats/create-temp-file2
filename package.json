@@ -32,7 +32,7 @@
     "git-dirty": "latest",
     "string.prototype.endswith": "~0.2.0",
     "string.prototype.startswith": "~0.2.0",
-    "tape": "~4.0.0"
+    "tape": "~4.5.0"
   },
   "engines": {
     "node": ">= 0.10.0"
