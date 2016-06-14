@@ -1,3 +1,10 @@
+<a name="1.0.5"></a>
+## 1.0.5 (2016-06-14)
+
+* Remove unnecessary dep ([02a6c6c](https://github.com/kikobeats/create-temp-file2/commit/02a6c6c))
+
+
+
 <a name="1.0.4"></a>
 ## 1.0.4 (2016-06-14)
 
