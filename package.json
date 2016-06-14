@@ -25,7 +25,6 @@
     "write"
   ],
   "dependencies": {
-    "mkdirp": "~0.5.1",
     "tempfile2": "~2.0.1"
   },
   "devDependencies": {
