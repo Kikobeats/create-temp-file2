@@ -32,7 +32,7 @@ test('write stream works', function (t) {
   }
 })
 
-test('extension', function (t) {
+test('extension (backward compatibility)', function (t) {
   t.plan(1)
   var ws = ctf('.txt')
   t.equal(path.extname(ws.path), '.txt', 'file extension is ".txt"')
@@ -41,10 +41,19 @@ test('extension', function (t) {
   t.end()
 })
 
-function errorHandling (method) {
-  var codes = ['EPERM', 'ENOENT']
+test('extension', function (t) {
+  t.plan(1)
+  var ws = ctf({ext: '.txt'})
+  t.equal(path.extname(ws.path), '.txt', 'file extension is ".txt"')
+  ws.end('lolz')
+  ws.cleanupSync()
+  t.end()
+})
+
+function errorHandling (opts, method, codes) {
   return function errhandle (t) {
-    var ws = createTempFile()
+    var ws = createTempFile(opts)
+
     ws.on('error', function (e) {
       t.notEqual(codes.indexOf(e.code), -1, 'Got ' + codes.join('/') + ' error')
       t.end()
@@ -53,14 +62,19 @@ function errorHandling (method) {
       try {
         fs.unlinkSync(ws.path)
       } catch (e) {
+        console.log('here')
         t.fail(String(e))
       }
       setTimeout(ws[method], 10)
     }, 10)
   }
 }
-test('error handling sync', errorHandling('cleanupSync'))
-// test('error handling async', errorHandling('cleanup'))
+
+test('error handling sync default params', errorHandling({}, 'cleanupSync', ['EPERM', 'ENOENT']))
+test('error handling sync explicit enoent', errorHandling({enoent: true}, 'cleanupSync', ['EPERM', 'ENOENT']))
+
+test('error handling async default params', errorHandling({}, 'cleanup', ['EPERM', 'ENOENT']))
+test('error handling async explicit enoent', errorHandling({enoent: true}, 'cleanup', ['EPERM', 'ENOENT']))
 
 test('cleanupSync() works', function (t) {
   t.plan(3)
@@ -104,6 +118,7 @@ function callsEnd (method) {
     setTimeout(ws[method], 0)
   }
 }
+
 callsEnd('what')
 test('ws.end is called when cleanup is called and stream is still going', callsEnd('cleanup'))
 test('ws.end is called when cleanupSync is called and stream is still going', callsEnd('cleanupSync'))

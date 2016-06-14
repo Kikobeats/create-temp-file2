@@ -2,23 +2,23 @@
 
 var fs = require('fs')
 var tempfile = require('tempfile2')
-var existsDefault = require('existential-default')
 
-var streamErrorHandler = function (opts, stream, err) {
+function streamErrorHandler (opts, stream, err) {
   if (err.code !== 'ENOENT' || opts.enoent) return stream.emit('error', err)
 }
 
-var paramsDefault = { enoent: true }
+var DEFAULTS = {
+  enoent: true
+}
 
-module.exports = function createWriteStream (params) {
+function createWriteStream (params) {
   var path = tempfile(params)
-
-  if (typeof params !== 'object')
-    params = paramsDefault
-  else
-    params = existsDefault(params, paramsDefault)
+  var sources = [{}, DEFAULTS]
+  if (typeof params === 'object') sources.push(params)
+  params = Object.assign.apply(null, sources)
 
   var writeStream = fs.createWriteStream(path)
+
   writeStream.path = path
 
   writeStream.cleanup = function (cb) {
@@ -34,9 +34,12 @@ module.exports = function createWriteStream (params) {
     try {
       fs.unlinkSync(path)
     } catch (err) {
+      console.log(err)
       streamErrorHandler(params, writeStream, err)
     }
   }
 
   return writeStream
 }
+
+module.exports = createWriteStream
