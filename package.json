@@ -2,7 +2,7 @@
   "name": "create-temp-file2",
   "description": "Creates a temporal file and returns a write stream with path and cleanup methods.",
   "homepage": "https://github.com/Kikobeats/create-temp-file2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./index.js",
   "author": {
     "name": "Kiko Beats",

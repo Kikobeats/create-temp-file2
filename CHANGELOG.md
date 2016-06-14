@@ -1,3 +1,14 @@
+<a name="1.0.4"></a>
+## 1.0.4 (2016-06-14)
+
+* Refactor ([92de3e8](https://github.com/kikobeats/create-temp-file2/commit/92de3e8))
+* chore(package): update existential-default to version 1.1.3 ([556b612](https://github.com/kikobeats/create-temp-file2/commit/556b612))
+* chore(package): update existential-default to version 1.2.1 ([ce24e74](https://github.com/kikobeats/create-temp-file2/commit/ce24e74))
+* chore(package): update existential-default to version 1.3.1 ([e32628d](https://github.com/kikobeats/create-temp-file2/commit/e32628d))
+* chore(package): update tape to version 4.5.0 ([c39608c](https://github.com/kikobeats/create-temp-file2/commit/c39608c))
+
+
+
 <a name="1.0.3"></a>
 ## 1.0.3 (2016-02-02)
 
