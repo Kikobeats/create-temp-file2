@@ -2,6 +2,7 @@
 
 var fs = require('fs')
 var tempfile = require('tempfile2')
+var ensureFile = require('ensure-file')
 
 function streamErrorHandler (opts, stream, err) {
   if (err.code !== 'ENOENT' || opts.enoent) return stream.emit('error', err)
@@ -13,6 +14,8 @@ var DEFAULTS = {
 
 function createWriteStream (params) {
   var path = tempfile(params)
+  ensureFile.sync(path)
+
   var sources = [{}, DEFAULTS]
   if (typeof params === 'object') sources.push(params)
   params = Object.assign.apply(null, sources)
