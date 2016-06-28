@@ -1,3 +1,11 @@
+<a name="1.1.0"></a>
+# 1.1.0 (2016-06-28)
+
+* Ensure to make file accesible ([2746db9](https://github.com/kikobeats/create-temp-file2/commit/2746db9))
+* chore(package): update tape to version 4.6.0 ([f829c2e](https://github.com/kikobeats/create-temp-file2/commit/f829c2e))
+
+
+
 <a name="1.0.5"></a>
 ## 1.0.5 (2016-06-14)
 
