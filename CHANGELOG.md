@@ -1,3 +1,18 @@
+<a name="1.1.1"></a>
+## 1.1.1 (2017-07-18)
+
+* Update .travis.yml ([b4b503b](https://github.com/kikobeats/create-temp-file2/commit/b4b503b))
+* Update README.md ([8a9b5f6](https://github.com/kikobeats/create-temp-file2/commit/8a9b5f6))
+* docs(readme): add Greenkeeper badge ([8f59930](https://github.com/kikobeats/create-temp-file2/commit/8f59930))
+* chore: drop support for Node.js 0.10 ([e68ab46](https://github.com/kikobeats/create-temp-file2/commit/e68ab46))
+* chore(package): update dependencies ([e5c82a9](https://github.com/kikobeats/create-temp-file2/commit/e5c82a9))
+
+
+### BREAKING CHANGE
+
+* This module no longer supports Node.js 0.10
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2016-06-28)
 
