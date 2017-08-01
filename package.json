@@ -33,9 +33,9 @@
     "git-dirty": "latest",
     "nyc": "latest",
     "standard": "latest",
-    "string.prototype.endswith": "~0.2.0",
-    "string.prototype.startswith": "~0.2.0",
-    "tape": "~4.8.0"
+    "string.prototype.endswith": "latest",
+    "string.prototype.startswith": "latest",
+    "tape": "latest"
   },
   "engines": {
     "node": ">= 4"
