@@ -1,3 +1,15 @@
+<a name="2.0.0"></a>
+# 2.0.0 (2017-09-05)
+
+* Add Promise support ([b229146](https://github.com/kikobeats/create-temp-file2/commit/b229146))
+* Lock dependencies ([90f9378](https://github.com/kikobeats/create-temp-file2/commit/90f9378))
+* Refactor ([294840d](https://github.com/kikobeats/create-temp-file2/commit/294840d))
+* Refactor tests ([4046455](https://github.com/kikobeats/create-temp-file2/commit/4046455))
+* Update package.json ([0ebfc22](https://github.com/kikobeats/create-temp-file2/commit/0ebfc22))
+* chore(package): update tape to version 4.8.0 ([8a917ab](https://github.com/kikobeats/create-temp-file2/commit/8a917ab))
+
+
+
 <a name="1.1.1"></a>
 ## 1.1.1 (2017-07-18)
 
