@@ -1,9 +1,11 @@
 'use strict'
 
-var path = require('path')
-var test = require('tape')
-var fs = require('fs')
-var createTempFile = require('../')
+const nodeify = require('nodeify')
+const path = require('path')
+const test = require('tape')
+const fs = require('fs')
+
+const createTempFile = require('../')
 require('string.prototype.startswith')
 require('string.prototype.endswith')
 
@@ -128,7 +130,7 @@ test('cleanupSync() works', function (t) {
   }, 0)
 })
 
-test('cleanup() works', function (t) {
+test('cleanup() callback works', function (t) {
   t.plan(3)
 
   var ws = ctf()
@@ -138,6 +140,23 @@ test('cleanup() works', function (t) {
     // timeout makes this test much more robust
     t.ok(fs.existsSync(ws.path), 'created file')
     ws.cleanup(function (err) {
+      t.notOk(err, err ? err.message : 'no error during cleanup()')
+      t.notOk(fs.existsSync(ws.path), 'cleanup() deleted the file')
+      t.end()
+    })
+  }, 0)
+})
+
+test('cleanup() promise works', function (t) {
+  t.plan(3)
+
+  var ws = ctf()
+  ws.end('lolz')
+
+  setTimeout(function () {
+    // timeout makes this test much more robust
+    t.ok(fs.existsSync(ws.path), 'created file')
+    nodeify(ws.cleanup(), function (err) {
       t.notOk(err, err ? err.message : 'no error during cleanup()')
       t.notOk(fs.existsSync(ws.path), 'cleanup() deleted the file')
       t.end()

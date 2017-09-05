@@ -1,5 +1,6 @@
 'use strict'
 
+const universalify = require('universalify')
 const ensureFile = require('ensure-file')
 const tempfile = require('tempfile2')
 const fs = require('fs')
@@ -21,13 +22,13 @@ module.exports = opts => {
 
   writeStream.path = path
 
-  writeStream.cleanup = cb => {
+  writeStream.cleanup = universalify.fromCallback(cb => {
     writeStream.end()
     fs.unlink(path, err => {
       if (err) streamErrorHandler(opts, writeStream, err)
-      if (cb) cb(err)
+      return cb(err)
     })
-  }
+  })
 
   writeStream.cleanupSync = () => {
     writeStream.end()

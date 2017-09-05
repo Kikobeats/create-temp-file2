@@ -24,30 +24,33 @@
     "tmp",
     "write"
   ],
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
     "ensure-file": "~1.0.3",
-    "tempfile2": "~2.0.1"
+    "tempfile2": "~2.0.1",
+    "universalify": "~0.1.1"
   },
   "devDependencies": {
     "coveralls": "latest",
     "git-dirty": "latest",
+    "nodeify": "~1.0.1",
     "nyc": "latest",
     "standard": "latest",
     "string.prototype.endswith": "latest",
     "string.prototype.startswith": "latest",
+    "tap-spec": "~4.1.1",
     "tape": "latest"
   },
   "engines": {
     "node": ">= 4"
   },
-  "files": [
-    "index.js"
-  ],
   "scripts": {
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard index.js",
     "pretest": "npm run lint",
-    "test": "nyc tape test/*.js"
+    "test": "nyc tape test/*.js | tap-spec"
   },
   "license": "MIT"
 }
