@@ -1,48 +1,42 @@
 'use strict'
 
-var fs = require('fs')
-var tempfile = require('tempfile2')
-var ensureFile = require('ensure-file')
+const ensureFile = require('ensure-file')
+const tempfile = require('tempfile2')
+const fs = require('fs')
 
 function streamErrorHandler (opts, stream, err) {
   if (err.code !== 'ENOENT' || opts.enoent) return stream.emit('error', err)
 }
 
-var DEFAULTS = {
+const DEFAULTS = {
   enoent: true
 }
 
-function createWriteStream (params) {
-  var path = tempfile(params)
+module.exports = opts => {
+  const path = tempfile(opts)
   ensureFile.sync(path)
 
-  var sources = [{}, DEFAULTS]
-  if (typeof params === 'object') sources.push(params)
-  params = Object.assign.apply(null, sources)
-
-  var writeStream = fs.createWriteStream(path)
+  opts = Object.assign({}, DEFAULTS, opts)
+  const writeStream = fs.createWriteStream(path)
 
   writeStream.path = path
 
-  writeStream.cleanup = function (cb) {
+  writeStream.cleanup = cb => {
     writeStream.end()
-    fs.unlink(path, function (err) {
-      if (err) streamErrorHandler(params, writeStream, err)
+    fs.unlink(path, err => {
+      if (err) streamErrorHandler(opts, writeStream, err)
       if (cb) cb(err)
     })
   }
 
-  writeStream.cleanupSync = function () {
+  writeStream.cleanupSync = () => {
     writeStream.end()
     try {
       fs.unlinkSync(path)
     } catch (err) {
-      console.log(err)
-      streamErrorHandler(params, writeStream, err)
+      streamErrorHandler(opts, writeStream, err)
     }
   }
 
   return writeStream
 }
-
-module.exports = createWriteStream
