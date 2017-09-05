@@ -35,12 +35,12 @@
   "devDependencies": {
     "coveralls": "latest",
     "git-dirty": "latest",
-    "nodeify": "~1.0.1",
+    "nodeify": "latest",
     "nyc": "latest",
     "standard": "latest",
     "string.prototype.endswith": "latest",
     "string.prototype.startswith": "latest",
-    "tap-spec": "~4.1.1",
+    "tap-spec": "latest",
     "tape": "latest"
   },
   "engines": {
