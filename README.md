@@ -1,4 +1,5 @@
 # create-temp-file2
+# ARCHIVED: Use [temperment](https://github.com/jamiebuilds/temperment), same functionality, smarter implementation
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/create-temp-file2.svg?style=flat-square)
 [![Build Status](http://img.shields.io/travis/Kikobeats/create-temp-file2/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/create-temp-file2)
